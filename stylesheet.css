@@ -1,9 +1,9 @@
+/*Header and Background*/
 body {
-    background-color: #FBE8A6;
+    background-color: #F5F5F5;
 }
-
 h1 {
-    color: #303C6C;
+    color: #0F1626;
     font-family: 'Space Mono', monospace;
     font-size: 48px;
     margin-bottom: 20px;
@@ -12,9 +12,8 @@ h1 {
     text-align: center;
     text-decoration: none;
 }
-
 p {
-    color: #303C6C;
+    color: #0F1626;
     font-family: 'Space Mono', monospace;
     font-size: 20px;
     margin-bottom: 0px;
@@ -22,8 +21,9 @@ p {
     text-align: center;
 }
 
+/*Navigation*/
 .navigation ul {
-    background-color: #303C6C;
+    background-color: #0F1626;
     list-style-type: none;
     margin: 0 auto;
     margin-top: 20px;
@@ -31,19 +31,48 @@ p {
     position: relative;
     text-align: center;
 }
-
 .navigation ul li { 
     display: inline; 
     position: relative;
 }
-
 .navigation ul li a {
-    background-color: #303C6C;
-    color: #99CED4;
+    background-color: #0F1626;
+    color: #FF533D;
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     padding: .2em 1em;
     position: relative;
     text-decoration: none;
 }
+.navigation ul li a:hover {
+    color: #F5F5F5;
+    background-color: #FF533D;
+}
+.navigation ul li a:active {
+    color: #F5F5F5;
+    background-color: #FF533D;
+}
+
+/*Page Header*/
+h2 {
+    color: 0F1626;
+    font-family: 'Space Mono', monospace;
+    font-size: 36px;
+    text-align: center;
+}
+
+/*About*/
+.about {
+   
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    width: 600px; 
+}
+.about p {
+    font-family: 'Work Sans', sans-serif;
+    text-indent: 40px;   
+    text-align: left;
+}
+
