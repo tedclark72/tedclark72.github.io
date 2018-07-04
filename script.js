@@ -1,5 +1,5 @@
 $(document).ready(function() { 
-//News Description
+    
     $('.projects div').mouseenter(function() {
         $(this).toggleClass('show-description');
     });

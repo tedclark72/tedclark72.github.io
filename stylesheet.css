@@ -24,7 +24,8 @@ p {
 /*Navigation*/
 .navigation ul {
     background-color: #0F1626;
-    filter: drop-shadow(10px 10px 20px #333);
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 10px #333);
     list-style-type: none;
     margin: 0 auto;
     margin-top: 20px;
@@ -92,11 +93,12 @@ h2 {
 #project {
     border: 2px solid #0F1626;
     border-radius: 5px;
-    filter: drop-shadow(10px 10px 20px #333);
+    filter: drop-shadow(5px 5px 10px #333);
     height: 300px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     position: relative;
+    transition: .3s;
 }
 .projects p {
     background: #0F1626;
@@ -122,6 +124,9 @@ h2 {
     font-family: 'Work Sans', sans-serif;
     opacity: 0;
 }
+#project:hover {
+    filter: drop-shadow(10px 10px 20px #333);
+}
 .projects .show-description p {
     height: 180px;
     border-radius: 5px;
@@ -136,12 +141,56 @@ h2 {
 .secondproject {
     background-image: url("images/gpagui.PNG");
 }
-
+.thirdproject {
+    
+}
 .fourthproject {
     background-image: url("images/website.PNG")
 }
 .fifthproject {
     background-image: url("images/rowinggame2.png");
+}
+
+/*Contact*/
+.contact {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact a {
+    background: #0F1626;
+    border-radius: 50%;
+    color: #F5F5F5;
+    filter: drop-shadow(5px 5px 10px #333);
+    font-size: 30px;
+    height: 30px;
+    padding: 20px;
+    margin: 15px;
+    margin-top: 20px;
+    text-align: center; 
+    text-decoration: none;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    width: 30px; 
+}
+.contact a:hover {
+    filter: drop-shadow(10px 10px 20px #333);
+}
+.fa-envelope:hover {
+    background: #4e8efc;
+    color: white;
+}
+.fa-linkedin:hover {
+    background: #007bb5;
+    color: white;
+}
+.fa-github:hover {
+    background: #6e5494;
+    color: white; 
+}
+.fa-twitter:hover {
+    background: #1da1f2;
+    color: white;
 }
 
 /*Smaller Screen Size Changes*/
