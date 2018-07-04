@@ -24,7 +24,7 @@ p {
 /*Navigation*/
 .navigation ul {
     background-color: #0F1626;
-    filter: drop-shadow(10px 10px 30px #333);
+    filter: drop-shadow(10px 10px 20px #333);
     list-style-type: none;
     margin: 0 auto;
     margin-top: 20px;
@@ -92,7 +92,7 @@ h2 {
 #project {
     border: 2px solid #0F1626;
     border-radius: 5px;
-    filter: drop-shadow(10px 10px 30px #333);
+    filter: drop-shadow(10px 10px 20px #333);
     height: 300px;
     margin-top: 10px;
     margin-bottom: 20px;
