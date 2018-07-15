@@ -135,17 +135,14 @@ h2 {
     opacity: 1;
     border-radius: 5px;
 }
-.firstproject {
-    background-image: url("images/rowinggame.png");
-}
 .secondproject {
     background-image: url("images/gpagui.PNG");
 }
 .thirdproject {
-    
+    background-image: url("images/website.PNG");
 }
 .fourthproject {
-    background-image: url("images/website.PNG")
+    background-image: url("images/rowinggame.PNG");
 }
 .fifthproject {
     background-image: url("images/rowinggame2.png");
