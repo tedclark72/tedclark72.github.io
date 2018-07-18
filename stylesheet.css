@@ -18,14 +18,14 @@ p {
     font-size: 20px;
     margin-bottom: 0px;
     margin-top: 0px;
+    padding-bottom: 15px;
     text-align: center;
 }
 
 /*Navigation*/
 .navigation ul {
-    background-color: #0F1626;
+    background-color: #F5F5F5;
     border-radius: 5px;
-    box-shadow: 3px 3px 30px rgba(0, 0, 0, .5);
     list-style-type: none;
     margin: 0 auto;
     margin-top: 20px;
@@ -39,14 +39,19 @@ p {
 }
 .navigation ul li a {
     background-color: #0F1626;
+    border-radius: 5px;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, .5);
     color: #FF533D;
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
     font-weight: 600;
-    padding: .2em 1em;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 20px;
     position: relative;
     text-decoration: none;
 }
+
 .navigation ul li a:hover {
     color: #F5F5F5;
     background-color: #FF533D;
@@ -71,10 +76,11 @@ h2 {
     margin: 0 auto;
     font-size: 16px;
     text-align: center;
-    width: 600px; 
+    width: 90%; 
 }
 .about p {
     font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
     text-indent: 40px;   
     text-align: left;
 }
@@ -88,7 +94,7 @@ h2 {
     margin-bottom: 50px;
     margin-top: 30px;
     position: relative;
-    width: 600px;
+    width: 90%;
 }
 #project {
     border: 2px solid #0F1626;
@@ -110,6 +116,7 @@ h2 {
     color: #F5F5F5;
     column-span: 1;
     height: 30px;
+    font-size: 24px;
     line-height: 28px;
     padding: 10px;
     position: absolute;
@@ -138,22 +145,26 @@ h2 {
 }
 .secondproject {
     background-image: url("images/gpagui.PNG");
-    background-size: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: top;
 }
 .thirdproject {
     background-image: url("images/website.PNG");
-    background-size: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 .fourthproject {
     background-image: url("images/rowinggame.png");
-    background-size: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 .fifthproject {
     background-image: url("images/rowinggame2.png");
-    background-size: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -169,8 +180,8 @@ h2 {
     box-shadow: 3px 3px 30px rgba(0, 0, 0, .5);
     color: #F5F5F5;
     display: inline-block;
-    font-size: 30px;
-    height: 30px;
+    font-size: 50px;
+    height: 50px;
     padding: 20px;
     position: relative;
     margin: 15px;
@@ -179,7 +190,7 @@ h2 {
     text-decoration: none;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
-    width: 30px; 
+    width: 50px; 
 }
 .contact a:hover {
     box-shadow: 4px 4px 35px rgba(0, 0, 0, 1);
@@ -203,25 +214,34 @@ h2 {
     color: white;
 }
 
-/*Smaller Screen Size Changes*/
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 24px;
-    }
-    p.title {
-        font-size: 14px;
-    }
-    
-    .navigation ul li {
-        margin-top: 5px;
-        display: block;
-        padding-top: 5px;
+/*Landscape Design*/
+@media screen and (orientation: landscape) {
+    p {
+        padding-bottom: 0px;
     }
     .navigation ul {
-        padding-top: 0px;
+        background-color: #0F1626;
+        box-shadow: 3px 3px 30px rgba(0, 0, 0, .5);
+    }
+    .navigation ul li a {
+        padding: .2em 1em;
+    }
+    .about {
+        width: 600px;
+    }
+    .about p {
+        font-size: 20px;
     }
     .projects {
-        width: 90%;
+        width: 600px;
+    }
+    .projects p {
+        font-size: 20px;
+    }
+    .contact a {
+        font-size: 30px;
+        height: 30px;
+        width: 30px;
     }
    
 }
