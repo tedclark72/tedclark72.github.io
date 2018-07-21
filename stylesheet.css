@@ -78,6 +78,15 @@ h2 {
     text-align: center;
     width: 90%; 
 }
+.redbar {
+    background-color: #FF533D;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    height: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 55px;
+}
 .about p {
     font-family: 'Work Sans', sans-serif;
     font-size: 24px;
@@ -132,8 +141,8 @@ h2 {
 }
 #project:hover {
     box-shadow: 4px 4px 35px rgba(0, 0, 0, 1);
-    transform: scale(1.01, 1.01);
-    -webkit-transition: scale(1.01, 1.01);
+    transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
 }
 .projects .show-description p {
     height: 180px;
@@ -171,17 +180,38 @@ h2 {
 
 /*Contact*/
 .contact {
+    font-size: 16px;
+    margin: 0 auto;
     text-align: center;
-    margin-bottom: 10px;
+    width: 600px;
+}
+.contact p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;  
+    text-align: left;
+    line-height: 35px;
+}
+.email1 {
+    background-color: #accaf9;
+    color: black;
+    border-radius: 2px;
+    padding: 2px;
+    font-weight: 500; 
+}
+.email2 {
+    background-color: #E57200;
+    color: #232D4B;
+    border-radius: 2px;
+    padding: 2px;
+    font-weight: 500; 
 }
 .contact a {
     background: #0F1626;
     border-radius: 50%;
     box-shadow: 3px 3px 30px rgba(0, 0, 0, .5);
     color: #F5F5F5;
-    display: inline-block;
-    font-size: 50px;
-    height: 50px;
+    font-size: 40px;
+    height: 40px;
     padding: 20px;
     position: relative;
     margin: 15px;
@@ -190,16 +220,27 @@ h2 {
     text-decoration: none;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
-    width: 50px; 
+    width: 40px; 
 }
 .contact a:hover {
     box-shadow: 4px 4px 35px rgba(0, 0, 0, 1);
-    -webkit-transform: scale(1.01, 1.01);
-    transform: scale(1.01, 1.01);
+    -webkit-transform: scale(1.02, 1.02);
+    transform: scale(1.02, 1.02);
 }
-.fa-envelope:hover {
-    background: #4e8efc;
-    color: white;
+#media {
+    display: inline-block;
+}
+#media p {
+    text-align: center;
+    opacity: 0;
+    transition: height .3s ease-in-out;
+    -webkit-transition: height .3s ease-in-out;
+}
+.contact show-name p {
+    opacity: 1;
+    background-color: #0F1626;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
 }
 .fa-linkedin:hover {
     background: #007bb5;
@@ -212,6 +253,10 @@ h2 {
 .fa-twitter:hover {
     background: #1da1f2;
     color: white;
+}
+.fa-instagram:hover {
+    background: #FFFFFF;
+    color: black;
 }
 
 /*Landscape Design*/
@@ -245,3 +290,4 @@ h2 {
     }
    
 }
+

@@ -1,5 +1,4 @@
 $(document).ready(function() { 
-    
     $('.projects div').mouseenter(function() {
         $(this).toggleClass('show-description');
     });
@@ -7,7 +6,10 @@ $(document).ready(function() {
         $(this).toggleClass('show-description');
      });
     
-    $('.fa fa-envelope').click(function() {
-        alert("You can email me");
+    $('.contact div').mouseenter(function() {
+        $(this).toggleClass('show-name');                             
+    });
+    $('.contact div').mouseleave(function() {
+        $(this).toggleClass('show-name');                             
     });
 });
