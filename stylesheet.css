@@ -183,11 +183,10 @@ h2 {
     font-size: 16px;
     margin: 0 auto;
     text-align: center;
-    width: 600px;
+    width: 90%;
 }
 .contact p {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 20px;  
+    font-family: 'Work Sans', sans-serif; 
     text-align: left;
     line-height: 35px;
 }
@@ -281,6 +280,12 @@ h2 {
         width: 600px;
     }
     .projects p {
+        font-size: 20px;
+    }
+    .contact {
+        width: 500px;
+    }
+    .contact p {
         font-size: 20px;
     }
     .contact a {
