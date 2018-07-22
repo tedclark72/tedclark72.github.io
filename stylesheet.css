@@ -48,7 +48,7 @@ h1 {
     float: left;
     list-style-type: none;
     position: relative;
-    padding: 10px;
+    padding: 15px;
     margin: 0 auto;
 }
 .navigation ul li { 
@@ -83,14 +83,13 @@ h1 {
 h2 {
     color: 0F1626;
     font-family: 'Space Mono', monospace;
-    font-size: 28px;
+    font-size: 32px;
     text-align: center;
 }
 
 /*About*/
 .about {
     margin: 0 auto;
-    font-size: 16px;
     text-align: center;
     width: 90%; 
 }
@@ -105,7 +104,7 @@ h2 {
 }
 .about p {
     font-family: 'Work Sans', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     text-indent: 40px;   
     text-align: left;
 }
@@ -114,12 +113,12 @@ h2 {
 .projects {
     background-size: cover;
     border-radius: 5px;  
-    height: 95%;
+    font-family: 'Work Sans', sans-serif;
     margin: 0 auto;
     margin-bottom: 50px;
     margin-top: 30px;
     position: relative;
-    width: 80%;
+    width: 85%;
 }
 #project {
     border: 2px solid #0F1626;
@@ -141,7 +140,8 @@ h2 {
     color: #F5F5F5;
     column-span: 1;
     height: 30px;
-    font-size: 24px;
+    
+    font-size: 28px;
     line-height: 28px;
     padding: 10px;
     position: absolute;
@@ -276,11 +276,21 @@ h2 {
 
 /*Landscape Design*/
 @media screen and (orientation: landscape) {
+    h1 {
+        font-size: 32px;
+    }
     .title {
         display: inline-block;
         max-width: 225px;
         padding-right: 20px;
         vertical-align: top;
+    }
+    .title p {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 30px;
+        margin-bottom: 5px;
     }
     .about {
         width: 700px;
