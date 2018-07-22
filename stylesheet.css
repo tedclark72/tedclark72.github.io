@@ -5,49 +5,65 @@ body {
 h1 {
     color: #0F1626;
     font-family: 'Space Mono', monospace;
-    font-size: 48px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    font-size: 32px;
+    margin-bottom: 1px;
+    margin-top: 0px;
     position: relative;
     text-align: center;
     text-decoration: none;
 }
-p {
+.top {
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-left: 10px;
+    text-align: center;
+}
+.top p {
     color: #0F1626;
     font-family: 'Space Mono', monospace;
-    font-size: 20px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-bottom: 15px;
+    font-size: 16px;
+    margin: 0 auto;
+    padding-bottom: 0px;
     text-align: center;
+}
+.title {
+    display: block;
+    max-width: 225px;
+    padding-right: 20px;
+    vertical-align: top;
+    margin: 0 auto;
 }
 
 /*Navigation*/
-.navigation ul {
-    background-color: #F5F5F5;
+.navigation {
+    display: inline-block;
+    padding-top: 15px;
+    padding-right: 0px;
+    max-width: 600px;
+}
+.nav {
+    background-color: #0F1626;
     border-radius: 5px;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, .5);
+    float: left;
     list-style-type: none;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 10px;
     position: relative;
-    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
 }
 .navigation ul li { 
-    display: inline; 
-    position: relative;
+    display: inline-block; 
 }
 .navigation ul li a {
     background-color: #0F1626;
     border-radius: 5px;
-    box-shadow: 3px 3px 30px rgba(0, 0, 0, .5);
     color: #FF533D;
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
     font-weight: 600;
     margin-right: 10px;
     margin-left: 10px;
-    padding: 20px;
+    padding: 8px;
     position: relative;
     text-decoration: none;
 }
@@ -67,7 +83,7 @@ p {
 h2 {
     color: 0F1626;
     font-family: 'Space Mono', monospace;
-    font-size: 36px;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -103,7 +119,7 @@ h2 {
     margin-bottom: 50px;
     margin-top: 30px;
     position: relative;
-    width: 90%;
+    width: 80%;
 }
 #project {
     border: 2px solid #0F1626;
@@ -180,7 +196,7 @@ h2 {
 
 /*Contact*/
 .contact {
-    font-size: 16px;
+    font-size: 24px;
     margin: 0 auto;
     text-align: center;
     width: 90%;
@@ -260,18 +276,14 @@ h2 {
 
 /*Landscape Design*/
 @media screen and (orientation: landscape) {
-    p {
-        padding-bottom: 0px;
-    }
-    .navigation ul {
-        background-color: #0F1626;
-        box-shadow: 3px 3px 30px rgba(0, 0, 0, .5);
-    }
-    .navigation ul li a {
-        padding: .2em 1em;
+    .title {
+        display: inline-block;
+        max-width: 225px;
+        padding-right: 20px;
+        vertical-align: top;
     }
     .about {
-        width: 600px;
+        width: 700px;
     }
     .about p {
         font-size: 20px;
