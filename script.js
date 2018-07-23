@@ -6,10 +6,10 @@ $(document).ready(function() {
         $(this).toggleClass('show-description');
      });
     
-    $('.contact div').mouseenter(function() {
-        $(this).toggleClass('show-name');                             
+    $('.socialmediacircle a').mouseenter(function() {
+        $(this).toggleClass('show-name'); 
     });
-    $('.contact div').mouseleave(function() {
+    $('.socialmediacircle a').mouseleave(function() {
         $(this).toggleClass('show-name');                             
     });
 });

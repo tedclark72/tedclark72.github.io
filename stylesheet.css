@@ -79,6 +79,14 @@ h1 {
     border-radius: 5px;
 }
 
+/*Links*/
+.link:link {
+    color: #F5F5F5;
+}
+.link:visited {
+    color: #F5F5F5
+}
+
 /*Page Header*/
 h2 {
     color: 0F1626;
@@ -193,7 +201,6 @@ h2 {
     background-position: center;
 }
 
-
 /*Contact*/
 .contact {
     font-size: 24px;
@@ -206,21 +213,8 @@ h2 {
     text-align: left;
     line-height: 35px;
 }
-.email1 {
-    background-color: #accaf9;
-    color: black;
-    border-radius: 2px;
-    padding: 2px;
-    font-weight: 500; 
-}
-.email2 {
-    background-color: #E57200;
-    color: #232D4B;
-    border-radius: 2px;
-    padding: 2px;
-    font-weight: 500; 
-}
-.contact a {
+
+.socialmediacircle a {
     background: #0F1626;
     border-radius: 50%;
     box-shadow: 3px 3px 30px rgba(0, 0, 0, .5);
@@ -237,24 +231,24 @@ h2 {
     -webkit-transition: all .3s ease-in-out;
     width: 40px; 
 }
-.contact a:hover {
+.socialmediacircle a:hover {
     box-shadow: 4px 4px 35px rgba(0, 0, 0, 1);
     -webkit-transform: scale(1.02, 1.02);
     transform: scale(1.02, 1.02);
 }
-#media {
-    display: inline-block;
+.socialmediacircle {
+    display: inline-flex;
 }
-#media p {
-    text-align: center;
-    opacity: 0;
-    transition: height .3s ease-in-out;
-    -webkit-transition: height .3s ease-in-out;
-}
-.contact show-name p {
-    opacity: 1;
+.socialmediacircle p {
     background-color: #0F1626;
     border-radius: 2px;
+    color: #F5F5F5;
+    opacity: 0;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+.socialmediacircle .show-name p {
+    opacity: 1;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
 }
 .fa-linkedin:hover {
@@ -272,6 +266,22 @@ h2 {
 .fa-instagram:hover {
     background: #FFFFFF;
     color: black;
+}
+.email1 {
+    background-color: #accaf9;
+    color: black;
+    border-radius: 2px;
+    padding: 2px;
+    font-weight: 500; 
+    text-decoration: none;
+}
+.email2 {
+    background-color: #E57200;
+    color: #232D4B;
+    border-radius: 2px;
+    padding: 2px;
+    font-weight: 500; 
+    text-decoration: none;
 }
 
 /*Landscape Design*/
@@ -310,7 +320,13 @@ h2 {
     .contact p {
         font-size: 20px;
     }
-    .contact a {
+    .email1 {
+        font-size: 20px;
+    }
+    .email2 {
+        font-size: 20px;
+    }
+    .socialmediacircle a {
         font-size: 30px;
         height: 30px;
         width: 30px;
