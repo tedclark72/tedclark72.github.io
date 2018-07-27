@@ -8,37 +8,23 @@ $(document).ready(function() {
     });
     
     //Blur and darken background image when hovered over
-    $('.individual-project').eq(0).hover(function() {
-        $('.project-img').eq(0).css({'filter': 'blur(3px) brightness(75%)', 'margin': '-5px -10px -10px -5px', 'backface-visibility': 'hidden'});
+    $('.individual-project').hover(function() {
+        $('.project-img', this).css({
+            'filter': 'blur(3px) brightness(60%)', 
+            'transform': 'scale(1.1, 1.1)', 
+            '-webkit-filter': 'blur(3px) brightness(60%)', 
+            '-webkit-transform': 'scale(1.1, 1.1)', 
+            '-moz-filter': 'blur(3px) brightness(60%)', 
+            '-moz-transform': 'scale(1.1, 1.1)'});
     }, function() {
-        $('.project-img').eq(0).css({'filter': 'blur(0px) brightness(100%)', 'backface-visibility': 'hidden'});
+        $('.project-img', this).css({
+            'filter': 'blur(0px) brightness(100%)',
+            'transform': 'scale(1, 1)',
+            '-webkit-filter': 'blur(0px) brightness(100%)',
+            '-webkit-transform': 'scale(1, 1)',
+            '-moz-filter': 'blur(0px) brightness(100%)',
+            '-moz-transform': 'scale(1, 1)'});
     });
-     $('.individual-project').eq(1).hover(function() {
-        $('.project-img').eq(1).css({'filter': 'blur(3px) brightness(75%)', 'margin': '-5px -10px -10px -5px'});
-    }, function() {
-        $('.project-img').eq(1).css({'filter': 'blur(0px) brightness(100%)'});
-    });
-     $('.individual-project').eq(2).hover(function() {
-        $('.project-img').eq(2).css({'filter': 'blur(3px) brightness(75%)', 'margin': '-5px -10px -10px -5px'});
-    }, function() {
-        $('.project-img').eq(2).css({'filter': 'blur(0px) brightness(100%)'});
-    });
-     $('.individual-project').eq(3).hover(function() {
-        $('.project-img').eq(3).css({'filter': 'blur(3px) brightness(75%)', 'margin': '-5px -10px -10px -5px'});
-    }, function() {
-        $('.project-img').eq(3).css({'filter': 'blur(0px) brightness(100%)'});
-    });
-     $('.individual-project').eq(4).hover(function() {
-        $('.project-img').eq(4).css({'filter': 'blur(3px) brightness(75%)', 'margin': '-5px -10px -10px -5px'});
-    }, function() {
-        $('.project-img').eq(4).css({'filter': 'blur(0px) brightness(100%)'});
-    });
-     $('.individual-project').eq(5).hover(function() {
-        $('.project-img').eq(5).css({'filter': 'blur(3px) brightness(75%)', 'margin': '-5px -10px -10px -5px'});
-    }, function() {
-        $('.project-img').eq(5).css({'filter': 'blur(0px) brightness(100%)'});
-    });
-    
     
     //Show name of social media when hovered over
     $('.socialmediacircle a').mouseenter(function() {
