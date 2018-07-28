@@ -1,9 +1,9 @@
 $(document).ready(function() { 
     //Show description when div is moused over
-    $('.projects div').mouseenter(function() {
+    $('.content-projects div').mouseenter(function() {
         $(this).toggleClass('show-description');
     });
-    $('.projects div').mouseleave(function() {
+    $('.content-projects div').mouseleave(function() {
         $(this).toggleClass('show-description');
     });
     
@@ -27,10 +27,10 @@ $(document).ready(function() {
     });
     
     //Show name of social media when hovered over
-    $('.socialmediacircle a').mouseenter(function() {
+    $('.socialmedia-circle a').mouseenter(function() {
         $(this).toggleClass('show-name'); 
     });
-    $('.socialmediacircle a').mouseleave(function() {
+    $('.socialmedia-circle a').mouseleave(function() {
         $(this).toggleClass('show-name');                             
     });
     
