@@ -33,4 +33,7 @@ $(document).ready(function() {
     $('.socialmediacircle a').mouseleave(function() {
         $(this).toggleClass('show-name');                             
     });
+    
+    //Send email on contact form
+
 });
