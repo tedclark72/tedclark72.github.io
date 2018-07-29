@@ -294,7 +294,7 @@ nav ul li a.active {
     text-align: center;
     width: 100%;
 }
-#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea, #contact-form button[type="submit"] {
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
     border: 1px solid #CCC;
     border-radius: 2px;
     display: block;
@@ -326,7 +326,7 @@ nav ul li a.active {
     transition: .3s ease-in-out;
     -moz-transition: .3s ease-in-out;
     -webkit-transition: .3s ease-in-out;
-    width: 70%;
+    width: 75%;
 }
 #contact-form button:hover {
     background-color: #FF533D;
@@ -515,7 +515,7 @@ nav ul li a.active {
         margin-left: 0px;
         padding-left: 0px;
     }
-    #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea, #contact-form button[type="submit"] {
+    #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
         margin-left: 0px;
         width: 525px;
     }
