@@ -35,7 +35,8 @@ $(document).ready(function() {
     });
     
     //Send email on contact form
-    $(function() {
+    //PHP NOT SUPPORTED BY GITHUB PAGES
+    /*$(function() {
         $("#contact-submit").click(function() {
             var data = {
                 name: $("#contact-name").val(),
@@ -55,5 +56,5 @@ $(document).ready(function() {
                 }
             });
         });
-    });   
+    });*/   
 });

@@ -1,3 +1,4 @@
+//NOT SUPPORTED BY GITHUB PAGES
 <?php
 
 if($_POST){
