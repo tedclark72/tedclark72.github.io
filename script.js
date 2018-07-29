@@ -27,12 +27,12 @@ $(document).ready(function() {
     });
     
     //Show name of social media when hovered over
-    $('.socialmedia-circle a').mouseenter(function() {
-        $(this).toggleClass('show-name'); 
+    $('.individual-media').hover(function() {
+        $('.socialmedia-name', this).css({'opacity': '1'});
+    }, function() {
+        $('.socialmedia-name').css({'opacity': '0'});
     });
-    $('.socialmedia-circle a').mouseleave(function() {
-        $(this).toggleClass('show-name');                             
-    });
+
     
     //Send email on contact form
     //PHP NOT SUPPORTED BY GITHUB PAGES

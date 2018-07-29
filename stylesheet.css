@@ -380,7 +380,7 @@ nav ul li a.active {
     width: 40px; 
 }
 .socialmedia-circle a:hover {
-    box-shadow: 4px 4px 35px rgba(0, 0, 0, 1);
+    box-shadow: 3px 3px 35px rgba(0, 0, 0, .6);
     -webkit-transform: scale(1.02, 1.02);
     transform: scale(1.02, 1.02);
 }
@@ -389,15 +389,15 @@ nav ul li a.active {
 }
 .socialmedia-circle p {
     background-color: #0F1626;
-    border-radius: 2px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 35px rgba(0, 0, 0, .6);
     color: #F5F5F5;
     opacity: 0;
+    margin-top: 0px;
+    text-align: center;
     transition: all .3s;
     -webkit-transition: all .3s;
-}
-.socialmedia-circle .show-name p {
-    opacity: 1;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    
 }
 .fa-linkedin:hover {
     background: #007bb5;
