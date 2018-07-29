@@ -36,35 +36,24 @@ $(document).ready(function() {
     
     //Send email on contact form
     $(function() {
-        // Get form
-        var form = $('#contact-form');
+        $("#contact-submit").click(function() {
+            var data = {
+                name: $("#contact-name").val(),
+                email: $("#contact-email").val(),
+                message: $("#contact-message").val()
+            };
 
-        // Set up event listener
-        $(form).submit(function(event) {
-            // Stop the browser from submitting the form.
-            event.preventDefault();
-
-            var formData = $(form).serialize();
-            
             $.ajax({
-                type: 'POST',
-                url: $(form).attr('action'),
-                data: formData
-            }).done(function(response) {
-                alert("Email successfully sent! I'll get back to you shortly.");
-
-                // Clear the form.
-                $('#name').val('');
-                $('#email').val('');
-                $('#message').val('');
-            }).fail(function(data) {
-                if (data.responseText !== '') {
-                    alert(data.responseText);
+                type: "POST",
+                url: "contact_form.php",
+                data: data,
+                success: function() {
+                    alert("Email successfully sent!");
+                },
+                error: function() {
+                    alert("Problem sending email.");
                 }
-                else {
-                    alert("There was a problem. Please check your fields or email me directly.");
-                }
-            }); 
+            });
         });
-    });
+    });   
 });
