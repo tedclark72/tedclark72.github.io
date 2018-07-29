@@ -42,15 +42,18 @@
                 <div class="content-redbar" id="first-bar"></div>
                 <p>Send me an email: </p>
                 
-                <form id="contact-form" action="mailto:tedclark72@gmail.com" method="post" enctype="text/plain">
-                    <input size="35" placeholder="Your Name" type="text" tabindex="1" required>
-                    <input size="35" placeholder="Your Email Address" type="email" tabindex="2" required>
-                    <textarea rows="6" cols="35" placeholder="Your Message..." type="text" tab-index="3" required></textarea>
-                    <button name="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                <form id="contact-form" method="post" action="contact_form.php">
+                    <input name="contact-name" id="contact-name" size="35" placeholder="Your Name" type="text" tabindex="1" required>
+                    
+                    <input name="contact-email" id="contact-email" size="35" placeholder="Your Email Address" type="text" tabindex="2" required>
+                    
+                    <textarea name="contact-message" id="contact-message" rows="6" cols="35" placeholder="Your Message..." type="text" tab-index="3" required></textarea>
+                    
+                    <button name="contact-submit" id="contact-submit">Submit</button>
                 </form>
                 
                 <div class="content-redbar"></div>
-                <p class="email-links">Or you can send me an email directly at <a href="mailto:tedclark72@gmail.com" class="email1">tedclark72@gmail.com</a> or at <a href="mailto:edwardclark@virginia.edu" class=email2>edwardclark@virginia.edu</a></p>
+                <p class="email-links">Or you can email me directly at <a href="mailto:tedclark72@gmail.com" class="email1">tedclark72@gmail.com</a> or at <a href="mailto:edwardclark@virginia.edu" class=email2>edwardclark@virginia.edu</a></p>
                 
                 <div class="content-redbar"></div>
                 <p>You can also find me here:</p>

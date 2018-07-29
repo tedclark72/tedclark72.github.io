@@ -35,5 +35,36 @@ $(document).ready(function() {
     });
     
     //Send email on contact form
+    $(function() {
+        // Get form
+        var form = $('#contact-form');
 
+        // Set up event listener
+        $(form).submit(function(event) {
+            // Stop the browser from submitting the form.
+            event.preventDefault();
+
+            var formData = $(form).serialize();
+            
+            $.ajax({
+                type: 'POST',
+                url: $(form).attr('action'),
+                data: formData
+            }).done(function(response) {
+                alert("Email successfully sent! I'll get back to you shortly.");
+
+                // Clear the form.
+                $('#name').val('');
+                $('#email').val('');
+                $('#message').val('');
+            }).fail(function(data) {
+                if (data.responseText !== '') {
+                    alert(data.responseText);
+                }
+                else {
+                    alert("There was a problem. Please check your fields or email me directly.");
+                }
+            }); 
+        });
+    });
 });
