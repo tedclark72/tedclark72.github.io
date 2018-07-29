@@ -54,7 +54,7 @@ header .subtitle {
 }
 footer {
     background-color: #0F1626;
-    box-shadow: 4px -1px 35px rgba(0, 0, 0, 1);
+    box-shadow: -3px -3px 30px rgba(0, 0, 0, .5);
     color: #F5F5F5;
     font-family: 'Work Sans', sans-serif;
     font-size: 12px;
@@ -106,6 +106,9 @@ nav ul li a {
     padding: 8px;
     position: relative;
     text-decoration: none;
+    transition: .15s ease-in-out;
+    -moz-transition: .15s ease-in-out;
+    -webkit-transition: .15s ease-in-out;
 }
 nav ul li a:hover {
     color: #F5F5F5;
@@ -184,6 +187,7 @@ nav ul li a.active {
     text-align: center;
 }
 .content-about .about-paragraph-2 .about-img {
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, .5);
     display: block;
     height: 200px;
     padding-bottom: 10px;
@@ -196,6 +200,7 @@ nav ul li a.active {
     line-height: 28px;
     margin: 0;
     padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 /*Projects*/
@@ -298,11 +303,14 @@ nav ul li a.active {
     border: 1px solid #CCC;
     border-radius: 2px;
     display: block;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
     margin: 10px auto;
     padding: 10px;
     position: relative;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
+    transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
     width: 100%;
 } 
 #contact-form input:focus, #contact-form textarea:focus {
@@ -345,9 +353,9 @@ nav ul li a.active {
     color: #0F1626;
     font-weight: 500;
     padding: 2px;
-    transition: .3s ease-in-out;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
+    transition: .15s ease-in-out;
+    -webkit-transition: .15s ease-in-out;
+    -moz-transition: .15s ease-in-out;
 }
 .email1:hover {
     background-color: #accaf9;
@@ -375,13 +383,15 @@ nav ul li a.active {
     margin-top: 20px;
     text-align: center; 
     text-decoration: none;
-    transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
+    transition: all .15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
     width: 40px; 
 }
 .socialmedia-circle a:hover {
     box-shadow: 3px 3px 35px rgba(0, 0, 0, .6);
     -webkit-transform: scale(1.02, 1.02);
+    -moz-transform: scale(1.02, 1.02);
     transform: scale(1.02, 1.02);
 }
 .socialmedia-circle {
@@ -396,6 +406,7 @@ nav ul li a.active {
     margin-top: 0px;
     text-align: center;
     transition: all .3s;
+    -moz-transition: all .3s;
     -webkit-transition: all .3s;
     
 }
@@ -528,13 +539,13 @@ nav ul li a.active {
     .email2 {
         font-size: 18px;
     }
-    .socialmedia-circle {
-        margin: 0 auto;
-    }
     .socialmedia-circle a {
         font-size: 30px;
         height: 30px;
         width: 30px;
     } 
+    .individual-media p {
+        padding-top: 0px;
+    }
 }
 
