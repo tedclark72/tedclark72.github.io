@@ -183,14 +183,12 @@ nav ul li a.active {
 .content-about .about-paragraph-2 {
     padding-top: 0px;
     margin: 0 auto;
-    max-width: 100%;
     text-align: center;
 }
 .content-about .about-paragraph-2 .about-img {
     box-shadow: 3px 3px 30px rgba(0, 0, 0, .5);
     display: block;
     height: 200px;
-    padding-bottom: 10px;
     margin: 0 auto;
     width: 200px;
 }
@@ -200,7 +198,8 @@ nav ul li a.active {
     line-height: 28px;
     margin: 0;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-top: 20px;
+    width: 100%;
 }
 
 /*Projects*/
@@ -487,12 +486,13 @@ nav ul li a.active {
     }
     .content-about .about-paragraph-2 .about-img {
         display: inline-block;
-        padding-right: 20px;
         width: 200px;
     }
     .content-about .about-paragraph-2 p {
         display: block;
         font-size: 18px;
+        padding-top: 0px;
+        padding-left: 20px;
         padding-bottom: 10px;
         width: 330px;
     }
