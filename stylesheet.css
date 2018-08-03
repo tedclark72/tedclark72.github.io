@@ -25,7 +25,7 @@
     text-decoration: none;
 }
 
-/*Header Content and Background*/
+/*Main Body*/
 body {
     background-color: #F5F5F5;
     height: 100%;
@@ -34,6 +34,7 @@ body {
     position: relative;
 }
 
+/*Main Container Div*/
 .main-container {
     display: block;
     min-height: 100vh;
@@ -41,6 +42,8 @@ body {
     position: relative;
     padding-bottom: 75px;
 }
+
+/*Header*/
 header {
     margin: 0 auto;
     padding-top: 10px;
@@ -72,6 +75,8 @@ header .subtitle {
     padding-right: 10px;
     text-align: center;
 }
+
+/*Footer*/
 footer {
     background-color: #0F1626;
     bottom: 0;
@@ -492,6 +497,9 @@ nav ul li a.active {
 }
 
 /*Unimplemented Page*/
+.content-unimplemented {
+    padding-top: 200px;
+}
 .content-unimplemented .error-title {
     color: #0F1626;
     font-family: 'Space Mono', monospace;
@@ -524,7 +532,6 @@ nav ul li a.active {
     -moz-transform: scale(1.02, 1.02);
     -webkit-transform: scale(1.02, 1.02);
 }
-
 
 /*Landscape Design*/
 @media screen and (orientation: landscape) {
