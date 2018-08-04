@@ -262,6 +262,7 @@ nav ul li a.active {
     display: block;
     height: 200px;
     margin: 0 auto;
+    object-fit: cover;
     width: 200px;
 }
 .content-about .about-paragraph-2 p {
@@ -486,6 +487,10 @@ nav ul li a.active {
 .content-contact .fa-github:hover {
     background: #6e5494;
     color: #F5F5F5; 
+}
+.content-contact .fa-facebook:hover {
+    background: #3B5998;
+    color: #F5F5F5;
 }
 .content-contact .fa-twitter:hover {
     background: #1da1f2;
