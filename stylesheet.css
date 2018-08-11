@@ -96,7 +96,7 @@ footer {
     -webkit-transition: .3s ease-in-out;
 }
 footer:hover {
-    box-shadow: -3px -3px 35px rgba(0, 0, 0, .6);
+    box-shadow: -3px -3px 35px rgba(0, 0, 0, .65);
 }
 footer .footer-top-level {
     display: inline-flex;
@@ -161,7 +161,7 @@ nav .navigation-list {
     -webkit-transition: .3s ease-in-out;
 }
 nav .navigation-list:hover {
-    box-shadow: 3px 3px 35px rgba(0, 0, 0, .6);
+    box-shadow: 3px 3px 35px rgba(0, 0, 0, .65);
 }
 nav ul li { 
     display: inline-block; 
@@ -251,21 +251,27 @@ nav ul li a.active {
     text-indent: 30px;   
     text-align: left;
 }
-.content-about .about-paragraph-2 {
+.content-about .about-paragraph-image {
     padding-top: 0px;
     margin: 0 auto;
     text-align: center;
 }
-.content-about .about-paragraph-2 .about-img {
+.content-about .about-paragraph-image .about-img {
     box-shadow: 3px 3px 30px rgba(0, 0, 0, .5);
     border-radius: 5px;
     display: block;
-    height: 200px;
+    height: 300px;
     margin: 0 auto;
     object-fit: cover;
-    width: 200px;
+    width: 250px;
+    transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
 }
-.content-about .about-paragraph-2 p {
+.content-about .about-paragraph-image .about-img:hover {
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, .65);
+}
+.content-about .about-paragraph-image p {
     display: block;
     font-size: 20px;
     line-height: 28px;
@@ -324,7 +330,7 @@ nav ul li a.active {
     transition: .3s ease-in-out;
 }
 .content-projects .individual-project:hover {
-    box-shadow: 3px 3px 35px rgba(0, 0, 0, .6);
+    box-shadow: 3px 3px 35px rgba(0, 0, 0, .65);
     transform: scale(1.02, 1.02);
     -moz-transform: scale(1.02, 1.02); 
     -webkit-transform: scale(1.02, 1.02); 
@@ -408,7 +414,7 @@ nav ul li a.active {
 }
 .content-contact #contact-form #contact-submit:hover {
     background-color: #FF533D;
-    box-shadow: 3px 3px 35px rgba(0, 0, 0, .6);
+    box-shadow: 3px 3px 35px rgba(0, 0, 0, .65);
     transform: scale(1.02, 1.02);
     -moz-transform: scale(1.02, 1.02);
     -webkit-transform: scale(1.02, 1.02);
@@ -460,7 +466,7 @@ nav ul li a.active {
     width: 40px; 
 }
 .content-contact .socialmedia-circle a:hover {
-    box-shadow: 3px 3px 35px rgba(0, 0, 0, .6);
+    box-shadow: 3px 3px 35px rgba(0, 0, 0, .65);
     -webkit-transform: scale(1.05, 1.05);
     -moz-transform: scale(1.05, 1.05);
     transform: scale(1.05, 1.05);
@@ -600,20 +606,18 @@ nav ul li a.active {
         margin-bottom: 0px;
         margin-top: 0px;
     }
-    .content-about .about-paragraph-2 {
+    .content-about .about-paragraph-image {
         display: inline-flex;
         max-width: 540px;
     }
-    .content-about .about-paragraph-2 .about-img {
+    .content-about .about-paragraph-image .about-img {
         display: inline-block;
-        width: 200px;
     }
-    .content-about .about-paragraph-2 p {
+    .content-about .about-paragraph-image p {
         display: block;
         font-size: 18px;
         padding-top: 0px;
         padding-left: 20px;
-        padding-bottom: 10px;
         width: 330px;
     }
     
