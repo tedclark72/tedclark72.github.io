@@ -381,7 +381,7 @@ nav .navigation-list a.active {
     -webkit-transition: .3s;
 }
 
-/*Unimplemented Page*/
+/*Unimplemented Page (Currently not used)*/
 .content-unimplemented {
     padding-top: 200px;
 }
